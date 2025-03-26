@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <header>
+        <h1>Chunin exams at konoha village</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List</h2>
+        <ol type="I">
+            <li>leaf vilage</li>
+            <li>Sand village</li>
+            <li>Mist village</li>
+            <li>light village</li>
+            <li>Rain village</li>
+        </ol>
+    </section>
+
+    <!-- External Image -->
+    <section>
+        <h2>Featured Image</h2>
+        <img src="images/imagepexel.jpeg" alt="" width="600">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contacts</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Naruto Uzamaki</td>
+                    <td>123 Street, Konoha</td>
+                    <td>+1234567890</td>
+                    <td>naruton@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Hinaa Hyuga</td>
+                    <td>456 Avenue, Konoha</td>
+                    <td>+1987654321</td>
+                    <td>hinata@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sasuke Uchiha</td>
+                    <td>789 Boulevard, Konohagakure</td>
+                    <td>+1122334455</td>
+                    <td>saske@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Asuma Sarutobi </td>
+                    <td>101 Road, konohagakure</td>
+                    <td>+1223344556</td>
+                    <td>asuma@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Kakashi Hatake  </td>
+                    <td>202 Lane, konohagkure</td>
+                    <td>+1555666777</td>
+                    <td>hatake@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2> Chunin exams Registration form</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="country">Kingdom:</label>
+            <select id="country" name="kingdom" required>
+                <option value="">Select kingdom</option>
+                <option value="FIRE kingdom">fire kingdom</option>
+                <option value="sand">sand kingdom</option>
+                <option value="water">water kingdom</option>
+                <option value="wind">wind kingdom</option>
+            </select>
+            <br><br>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="ninjutsu" name="interests" value="ninjutsu">
+            <label for="coding">ninjutsu</label>
+            <input type="checkbox" id="taijutsu" name="interests" value="taijutsu">
+            <label for="reading">taijustsu</label>
+            <input type="checkbox" id="genjutsu" name="interests" value="genjutsu">
+            <label for="traveling">genjutsu</label>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
